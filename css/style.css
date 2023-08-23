@@ -1,0 +1,99 @@
+html {
+    padding: 0;
+    margin: 0;
+    font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #282a36;
+}
+
+body {
+    margin: 0;
+}
+
+header,
+section,
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+}
+
+h1 {
+    color: #ff5555;
+}
+
+h2 {
+    color: #50fa7b;
+}
+
+h3,
+h4,
+h5,
+h6 {
+    color: #ffb86c;
+}
+
+p,
+span,
+strong {
+    color: #f8f8f2;
+}
+
+.container {
+    margin: 0 auto;
+    width: 90vw;
+    max-width: 1440px;
+}
+
+header {
+    border-bottom: 1px solid #f8f8f2;
+}
+
+header .align-presentation {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 15px 0;
+    border-radius: 5px;
+    position: relative;
+}
+
+header .align-presentation .image-part {
+    width: 180px;
+    height: 180px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    position: absolute;
+    right: 10vw;
+    top: 5px;
+}
+
+header .align-presentation .image-part img {
+    width: auto;
+    height: auto;
+    max-height: 100%;
+    transform: scale(1.5);
+    margin-bottom: -65px;
+}
+
+.about-me .content-about-me {
+    width: 100%;
+}
+
+.about-me .content-about-me .text-about-me:after {
+    /* content: '|'; */
+    content: '▌';
+    opacity: 1;
+    animation: blink 1.5s infinite;
+}
+
+@keyframes blink{
+    0%, 100%{
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+}
