@@ -58,8 +58,8 @@ header .align-presentation {
 }
 
 header .align-presentation .image-part {
-    width: 180px;
-    height: 180px;
+    width: 140px;
+    height: 140px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -95,5 +95,18 @@ header .align-presentation .image-part img {
     }
     50%{
         opacity: 0;
+    }
+}
+
+@media (max-width: 600px) {
+    header .align-presentation .image-part {
+        width: 100px;
+        height: 100px;
+        right: 0vw;
+        top: auto;
+    }
+
+    header .align-presentation .image-part img {
+        margin-bottom: -30px;
     }
 }
