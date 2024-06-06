@@ -78,8 +78,57 @@ header .align-presentation .image-part img {
     margin-bottom: -65px;
 }
 
-.about-me .content-about-me {
+.about-me .content-about-me,
+.about-project .content-about-project,
+.some-tricks .content-some-tricks {
     width: 100%;
+}
+
+.content-some-tricks {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.content-some-tricks a {
+    text-decoration: none;
+}
+
+.content-some-tricks a .item-trick {
+    background-color: transparent;
+    border: 1px solid #000000;
+    border-radius: 10px;
+    padding: 25px;
+}
+
+.content-some-tricks a .item-trick:hover {
+    background-color: rgba(0, 0, 0, 0.3);
+    transition: 0.5s ease-in-out;
+}
+
+
+.content-some-tricks a .item-trick .image-item-trick {
+    min-height: 255px;
+    width: 255px;
+    display: flex;
+    justify-content: center;
+}
+
+.content-some-tricks a .item-trick .image-item-trick img {
+    width: 225px;
+    height: auto;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+.content-some-tricks a .item-trick .description-item-trick p {
+    color: #ffffff;
+    margin: 0;
+}
+
+.empty-space {
+    height: 50px;
 }
 
 @media (max-width: 600px) {
