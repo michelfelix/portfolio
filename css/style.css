@@ -82,22 +82,6 @@ header .align-presentation .image-part img {
     width: 100%;
 }
 
-.about-me .content-about-me .text-about-me:after {
-    /* content: '|'; */
-    content: '▌';
-    opacity: 1;
-    animation: blink 1.5s infinite;
-}
-
-@keyframes blink{
-    0%, 100%{
-        opacity: 1;
-    }
-    50%{
-        opacity: 0;
-    }
-}
-
 @media (max-width: 600px) {
     header .align-presentation .image-part {
         width: 100px;
