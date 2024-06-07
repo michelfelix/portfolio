@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>UsersLikeMe</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <header class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12">
+        <div class="container">
+            <div id="box-page-name" class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 box-page-name">
+                <div class="name-page">
+                    <p class="page-name">
+                        users_like.me
+                    </p>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section class="col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 section-title-page">
+        <div class="container">
+            <div class="box-title-page">
+                <p class="title-page">
+                    Find new users like you
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <section class="content-user-info container">
+        <div class="photo-box">
+            <div class="background-user-photo">
+                <div id="photoBackground" class="background-user-photo" style="background-image: url('https://media.licdn.com/dms/image/C4D03AQGFL2oRm7Cc7A/profile-displayphoto-shrink_100_100/0/1604362355830?e=1723075200&v=beta&t=qpeTQBdE-If8VT9wrwH8CgCKrkhzLbtyz7PaFOBDo6E');"></div>
+            </div>
+            <div id="photoPicture" class="photo-user">
+                <img class="user-photo" src="https://media.licdn.com/dms/image/C4D03AQGFL2oRm7Cc7A/profile-displayphoto-shrink_100_100/0/1604362355830?e=1723075200&v=beta&t=qpeTQBdE-If8VT9wrwH8CgCKrkhzLbtyz7PaFOBDo6E">
+            </div>
+        </div>
+        
+        <div class="follow-box">
+            <div class="button-follow-box col-2 col-sm-6 col-md-4 col-lg-4 col-xl-4">
+                <button type="button" id="follow" class="btn btn-primary" onclick="followUser()">Follow</button>
+            </div>
+            
+            <div class="button-follow-box col-6 col-sm-3 col-md-4 col-lg-4 col-xl-4">
+                <button type="button" id="tryNext" class="btn btn-light" onclick="getInfoUser()">try the next one</button>
+            </div>
+        </div>
+    
+        <div class="box-main-info">
+            <div class="box-name">
+                <p id="userName" class="full-name">
+                    Michel Felix
+                </p>
+            </div>
+            
+            <div class="box-country">
+                <p id="country" class="coutry">
+                    Osasco, São Paulo
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    <section class="more-info-user container">
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 personal-box-info">
+            <p class="title-personal-info">
+                Personal Info
+            </p>
+        
+            <p id="bornAt" class="content-personal-info">
+                born at: Brasil
+            </p>
+        
+            <p id="age" class="content-personal-info">
+                Age: 26 years old
+            </p>
+        </div>
+
+        <div class="col-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 contact-box-info">
+            <p class="title-contact-info">
+                Contact Info
+            </p>
+        
+            <p id="email" class="content-contact-info">
+                email: micheldias9@gmail.com
+            </p>
+        
+            <p id="phone" class="content-contact-info">
+                Phone1: (11) 9 8785-2040
+            </p>
+        </div>
+    </section>
+    
+      <script src="js/script.js"></script>
+</body>
+</html>
