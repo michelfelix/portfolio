@@ -9,26 +9,10 @@ function isColor(data) {
     return colors[data] || "Não está na lista"
 }
 
-console.log(isColor("red"))
+//comentei o console.log, vou deixar só registrado essa informação para quando precisar visualizar
+//console.log(isColor("red"))
 
 /* INÍCIO COMO DEVE FAZER CONDIÇÕES AO INVÉS DE IFS */
-
-// INÍCIO EVENT LOOP
-
-// console.log(1)
-// setTimeout(() => {
-//     console.log('setTimeOut data')    
-// }, 1);
-    
-// const promise = new Promise  (resolve => {
-//     resolve('promise data')
-// })
-
-// promise.then(data=> console.log(data))
-        
-// console.log(2)
-        
-// FIM EVENT LOOP
 
 //INÍCIO FETCH
 
@@ -72,5 +56,6 @@ console.log(isColor("red"))
         })
     }
 
+    //Esse timeout é só para mostrar que tem um loader enquanto a informação não chega
     setTimeout(getGithubInfo, 2000);
 //FIM FETCH
