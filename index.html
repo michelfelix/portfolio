@@ -11,13 +11,26 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfólio - Michel Felix Dias</title>
-    <link rel="stylesheet" href="css/style.css">
+    <link id="themeStyleSheet" rel="stylesheet" href="css/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="container">
+        <div class="toggleThemeBox">
+            <div class="textThemeToggle">
+                <p>
+                    Theme: 
+                </p>
+            </div>
+            <div class="buttonThemeToggle">
+                <input type="checkbox" id="toggleThemeButton" />
+                <label for="toggleThemeButton" class="switchThemeButton">
+                    <span class="slider"></span>
+                </label>
+            </div>
+        </div>
         <div class="align-presentation">
             <div class="image-part">
                 <img src="https://raw.githubusercontent.com/michelfelix/portfolio/main/images/michel.jpg">

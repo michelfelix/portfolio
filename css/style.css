@@ -1,8 +1,20 @@
+:root {
+    --text-color: #000;
+    --bg-color: #fff;
+}
+
+
+.dark:root {
+    --text-color: #fff;
+    --bg-color: #000;
+}
+
 html {
     padding: 0;
     margin: 0;
     font-family: 'Ubuntu', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    background-color: #282a36;
+    /* background-color: #282a36; */
+    background-color: var(--bg-color);
 }
 
 body {
@@ -18,24 +30,28 @@ footer {
 }
 
 h1 {
-    color: #ff5555;
+    /* color: #ff5555; */
+    color: var(--text-color);
 }
 
 h2 {
-    color: #50fa7b;
+    /* color: #50fa7b; */
+    color: var(--text-color);
 }
 
 h3,
 h4,
 h5,
 h6 {
-    color: #ffb86c;
+    /* color: #ffb86c; */
+    color: var(--text-color);
 }
 
 p,
 span,
 strong {
-    color: #f8f8f2;
+    /* color: #f8f8f2; */
+    color: var(--text-color);
 }
 
 .container {
@@ -44,8 +60,60 @@ strong {
     max-width: 1440px;
 }
 
+.toggleThemeBox {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 5px;
+}
+
+.textThemeToggle p {
+    margin: 0;
+}
+
+.buttonThemeToggle {
+    margin-left: 5px;
+}
+
+#toggleThemeButton {
+    display: none;
+}
+
+.switchThemeButton {
+    position: relative;
+    background-color: #000;
+    width: 30px;
+    height: 15px;
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    transition: all .5s ease-in-out;
+    cursor: pointer;
+}
+
+.slider {
+    position: absolute;
+    background-color: #fff;
+    border-radius: 50%;
+    width: 15px;
+    height: 15px;
+    transition: all .5s ease-in-out;
+}
+
+#toggleThemeButton:checked ~ .switchThemeButton {
+    background-color: #777;
+}
+
+
+#toggleThemeButton:checked ~ .switchThemeButton .slider{
+    transform: translateX(15px);
+}
+
+
 header {
-    border-bottom: 1px solid #f8f8f2;
+    /* border-bottom: 1px solid #f8f8f2; */
+    border-bottom: 1px solid var(--text-color);
 }
 
 header .align-presentation {
@@ -96,7 +164,8 @@ header .align-presentation .image-part img {
 
 .content-some-tricks a .item-trick {
     background-color: transparent;
-    border: 1px solid #000000;
+    /* border: 1px solid #000000; */
+    border: 1px solid var(--text-color);
     border-radius: 10px;
     padding: 25px;
 }
@@ -123,7 +192,8 @@ header .align-presentation .image-part img {
 }
 
 .content-some-tricks a .item-trick .description-item-trick p {
-    color: #ffffff;
+    /* color: #ffffff; */
+    color: var(--text-color);
     margin: 0;
 }
 
